@@ -1,0 +1,21 @@
+* {
+    padding: 0;
+    margin: 0;
+}
+
+body {
+    background-image: url('./assets/form-background-image.png');
+    background-repeat: no-repeat;
+    background-color: #FBF8F3;
+    background-attachment: fixed;
+    background-position: 800px -140px;
+}
+
+.wrapper {
+    display: flex;
+}
+
+.form-container {
+    min-width: 600px;
+    height: 96vh;
+}
