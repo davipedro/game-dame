@@ -1,0 +1,82 @@
+import Navbar from "../components/Navbar"
+
+import { useState } from "react"
+
+import './UserPanel.css'
+
+import trashIcon from '../assets/trash-can-icon.png'
+import pencilIcon from '../assets/pencil-icon.png'
+
+import spongeBob from '../assets/spongebob-image.png'
+import deliverUsMars from '../assets/deliver-us-mars-image.png'
+import godOfWar from '../assets/gow-image.png'
+import deathStranding from '../assets/death-stranding-image.png'
+
+const UserPanel = () => {
+
+  const [username, setUsername] = useState("Nome do Usuário")
+  const [email, setEmail] = useState("nomeusuario@email.com")
+  const [cpf, setCpf] = useState("123.456.789-00")
+
+  return (
+    <>
+      {/* <header id="shadow-box"></header> */}
+      <Navbar />
+      <main className="user-panel-main-container">
+        <section className="user-data">
+          <h1>Olá, {username}</h1>
+          <p>Seu email é {email}</p>
+          <p>Seu CPF é {cpf}</p>
+
+          <div 
+            className="user-panel-btn" 
+            onClick={() => {window.location.href = '/alterar-dados'}}
+          >
+            <a href="/alterar-dados">Alterar Dados</a>
+            <img src={pencilIcon} alt="pencil-icon" />
+          </div>
+          <div 
+            className="user-panel-btn"
+            onClick={() => {window.location.href = '/excluir-conta'}}
+          >
+            <a href="/excluir-conta">Excluir Conta</a>
+            <img src={trashIcon} alt="trash-can-icon" />
+          </div>
+          <div 
+            className="user-panel-btn" 
+            id="admin-panel-link"
+            onClick={() => {window.location.href = '/admin-panel'}}
+          >
+            <a href="/admin-panel">Tela do admin</a>
+          </div>
+        </section>
+        <section className="user-games">
+          <div id="games-section-title">
+            <h2>Jogos Adquiridos</h2>
+          </div>
+          <ul className="user-games-library">
+            <li>
+              <img src={spongeBob} alt="jogo 1" />
+              <p className="classificação">100/100</p>
+            </li>
+            <li>
+              <img src={deliverUsMars} alt="jogo 1" />
+              <p className="classificação">95/100</p>
+            </li>
+            <li>
+              <img src={godOfWar} alt="jogo 1" />
+              <p className="classificação">75/100</p>
+            </li>
+            <li>
+              <img src={deathStranding} alt="jogo 1" />
+              <p className="classificação">Adicionar avaliação</p>
+            </li>
+          </ul>
+        </section>
+        <a href="/cart" id="cart"></a>
+      </main>
+    </>
+  )
+}
+
+export default UserPanel

@@ -1,0 +1,112 @@
+.user-panel-main-container {
+    display: flex;
+}
+
+.user-data {
+    display: flex;
+    flex-direction: column;
+    width: calc(100% - 600px);
+    min-width: 600px;
+    height: calc(100vh - 100px);
+    background-color: #FBF6F0;
+    justify-content: center;
+    padding: 200px;
+}
+
+.user-data h1 {
+    font-size: 48px;
+    font-weight: 500;
+    color: #4B626C;
+    margin-bottom: 30px;
+}
+
+.user-data p {
+    margin: 10px 0;
+    color: #4B626C;
+    font-size: 32px;
+}
+
+.user-panel-btn {
+    margin: 29px 0;
+    display: flex;
+    justify-content: space-between;
+    width: 270px;
+    height: 45px;
+    background-color: #4B626C;
+    text-decoration: none;
+    margin-bottom: 5px;
+    padding: 10px;
+    border-radius: 10px;
+}
+
+.user-panel-btn:hover {
+    background-color: #28353a;
+    cursor: pointer;
+}
+
+.user-panel-btn a {
+    font-size: 30px;
+    color: #FBF6F0;
+    text-decoration: none;
+    align-self:center;
+}
+
+.user-panel-btn img {
+    display: flex;
+    align-self:center;
+}
+    
+#admin-panel-link {
+    background-color: #A3ACAE;
+}
+
+#admin-panel-link:hover {
+    background-color: #585858;
+}
+
+.user-games {
+    width: 40vw;
+    min-width: 600px;
+    background-color: #4B626C;
+}
+
+#games-section-title {
+    display: flex;
+    height: 150px;
+    padding-left: 35px;
+}
+
+.user-games h2 {
+    align-self: flex-end;
+    margin: 20px;
+    font-size: 32px;
+    font-weight: 300;
+    color: #FBF6F0;
+    padding: 20px;
+}
+
+.user-games-library {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 30px;
+    padding: 20px 90px;
+}
+
+.user-games-library p {
+    text-align: center;
+    color: #FBF6F0;
+}
+
+.user-games-library li {
+    list-style-type: none;
+    justify-self: center;
+}
+
+#cart {
+    background-image: url('../assets/cart-icon.png');
+    height: 75px;
+    width: 75px;
+    position: absolute;
+    right: 20px;
+    bottom: 20px;
+}
