@@ -1,0 +1,131 @@
+.file-input {
+    display: none;
+}
+
+.file-btn {
+    color: #97A4A2;
+    font-size: 24px;
+    font-weight: 300;
+    width: 200px;
+    height: 50px;
+    background-color: #EFEFEF;
+    border: none;
+    border-radius: 5px;
+    margin: 15px 0 35px 0;
+}
+
+.file-btn:hover {
+    cursor: pointer;
+}
+
+.submit-btn {
+    width: 270px;
+    height: 45px;
+    font-size: 30px;
+    border: none;
+    border-radius: 10px;
+}
+
+.submit-btn:hover {
+    cursor: pointer;
+}
+
+.edge-section .submit-btn {
+    color: #606060;
+    background-color: #FFFFFF;
+}
+
+.middle-section .submit-btn {
+    margin-top: 20px;
+    color: #f3f3F3;
+    background-color: #4B626C;
+}
+
+.admin-panel-main-container {
+    display: flex;
+    box-sizing: border-box;
+}
+
+.admin-panel-main-container h2 {
+    font-size: 32px;
+    font-weight: 500;
+    margin: 40px 0 20px 0;
+}
+
+.edge-section h2 {
+    color: #FBF6F0;
+}
+
+.middle-section h2 {
+    color: #4B626C;
+}
+
+.admin-panel-main-container section {
+    width: 33%;
+    flex-grow: 1;
+    height: calc(100vh - 100px);
+}
+
+.panel-section {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.edge-section {
+    background-color: #4B626C;
+}
+
+.panel-section input {
+    margin: 20px 0;
+    width: 390px;
+    height: 50px;
+    text-align: center;
+}
+
+.panel-section 
+input:focus,
+textarea:focus {
+    outline: none;
+}
+
+.panel-section 
+input::placeholder,
+.panel-section
+textarea::placeholder {
+    font-size: 24px;
+    font-weight: 300;
+    color: #97A4A2;
+    text-align: center;
+}
+
+.panel-section
+input,
+.panel-section
+textarea {
+    border: none;
+    border-radius: 5px;
+    padding: 20px;
+}
+
+.panel-section textarea,
+.panel-section input,
+.panel-section button {
+    max-width: 80%;
+    box-shadow: 2px 3px 4px #0000003d;
+}
+
+.middle-section input {
+    background-color: #4B626C;
+    color: #FFFFFF;
+}
+
+.middle-section input::placeholder {
+    color: #FFFFFF;
+}
+
+.edge-section textarea {
+    margin: 30px 0;
+    width: 390px;
+    height: 154px;
+}
