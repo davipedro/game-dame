@@ -12,7 +12,7 @@ const AccountRecovery = () => {
             <h1 className='form-title'>Recuperar <p>Conta</p> </h1>
             <form id='form-input'>
                 <input 
-                    type="text"
+                    type="email"
                     name='email'
                     placeholder='E-mail'
                     onChange={(e) => setEmail(e.target.value)}
@@ -22,8 +22,8 @@ const AccountRecovery = () => {
                 <button id='submit-btn' type="submit" disabled={!email}>➜
                 </button>
             </form>
-            <a id='link' href="login">Criar Conta</a>
-            <a id='link' href="login">Fazer Login</a>
+            <a className='link' href="create-account">Criar Conta</a>
+            <a className='link' href="login">Fazer Login</a>
         </div>
     </div>
   )

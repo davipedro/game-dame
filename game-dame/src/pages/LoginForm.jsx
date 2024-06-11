@@ -13,7 +13,7 @@ const LoginForm = () => {
             <h1 className='form-title'>Login</h1>
             <form id='form-input'>
                 <input 
-                    type="text"
+                    type="email"
                     name='email'
                     placeholder='E-mail'
                     onChange={(e) => setEmail(e.target.value)}
@@ -31,8 +31,8 @@ const LoginForm = () => {
                 <button id='submit-btn' type="submit" disabled={!password || !email}>➜
                 </button>
             </form>
-            <a id='link' href="login">Criar Conta</a>
-            <a id='link' href="login">Esqueceu a Senha?</a>
+            <a className='link' href="create-account">Criar Conta</a>
+            <a className='link' href="password-recovery">Esqueceu a Senha?</a>
         </div>
     </div>
   )
