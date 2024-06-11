@@ -24,7 +24,7 @@ const RegisterForm = () => {
                     required
                 />
                 <input 
-                    type="text"
+                    type="email"
                     name='email'
                     placeholder='E-mail'
                     onChange={(e) => setEmail(e.target.value)}
@@ -59,7 +59,7 @@ const RegisterForm = () => {
                 </button>
                 {password !== confirmPassword && <p className="error-message">As senhas não coincidem!</p>}
             </form>
-            <a id='link' href="login">Fazer Login</a>
+            <a className='link' href="login">Fazer Login</a>
         </div>
     </div>
   )
