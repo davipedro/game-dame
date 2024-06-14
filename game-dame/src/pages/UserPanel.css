@@ -1,3 +1,12 @@
+#box-shadow {
+    position: absolute;
+    background-color: transparent;
+    width: 100%;
+    top: 85px;
+    height: 15px;
+    box-shadow: 0 9px 10px rgba(0, 0, 0, 0.3);
+  }
+
 .user-panel-main-container {
     display: flex;
 }
@@ -6,7 +15,6 @@
     display: flex;
     flex-direction: column;
     width: calc(100% - 600px);
-    min-width: 600px;
     height: calc(100vh - 100px);
     background-color: #FBF6F0;
     justify-content: center;
@@ -65,31 +73,30 @@
 }
 
 .user-games {
-    width: 40vw;
-    min-width: 600px;
+    min-width: 680px;
     background-color: #4B626C;
 }
 
 #games-section-title {
     display: flex;
-    height: 150px;
+    height: 80px;
     padding-left: 35px;
 }
 
 .user-games h2 {
     align-self: flex-end;
-    margin: 20px;
+    margin: 0px 20px 20px 20px;
     font-size: 32px;
     font-weight: 300;
     color: #FBF6F0;
-    padding: 20px;
+    padding-left: 35px;
 }
 
 .user-games-library {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
     gap: 30px;
-    padding: 20px 90px;
+    padding: 0px 90px;
 }
 
 .user-games-library p {
@@ -106,7 +113,63 @@
     background-image: url('../assets/cart-icon.png');
     height: 75px;
     width: 75px;
-    position: absolute;
+    position: fixed;
     right: 20px;
     bottom: 20px;
+}
+
+#game-gallery{
+    display: flex;
+    flex-direction: column;
+}
+
+#navegation-arrows {
+    display: flex;
+    width: 100%;
+    padding: 25px 20px;
+    justify-content: center;
+}
+
+#navegation-arrows button {
+    color: #FBF6F0;
+    border: none;
+    border-radius: 10px;
+    width: 60px;
+    height: 40px;
+    margin: 0 10px;
+}
+
+#left-arrow,
+#right-arrow {
+    font-size: 40px;
+}
+
+@media (max-width: 1300px) {
+    .user-panel-main-container{
+        flex-direction: column;
+    }
+    .user-data {
+        width: 100%;
+        padding: 50px;
+    }
+}
+
+@media (max-width: 590px) {
+    #display-email {
+        font-size: 20px;
+    }
+    #display-cpf {
+        font-size: 20px;
+    }
+    .user-games {
+        padding: 40px 0;
+        min-width: 100%;
+    }
+    .user-games-library {
+        grid-template-columns: repeat(1, 1fr);
+    }
+    .user-data {
+        width: auto;
+        height: auto;
+    }
 }
