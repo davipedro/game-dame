@@ -11,7 +11,7 @@ const RegisterForm = () => {
     const [confirmPassword, setConfirmPassword] = useState('');
 
   return (
-    <div className="wrapper">
+    <div className='wrapper'>
         <div className="form-container">
             <h1 className='form-title'>Registrar</h1>
             <form id='form-input'>

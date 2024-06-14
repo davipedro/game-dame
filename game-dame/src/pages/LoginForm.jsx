@@ -8,7 +8,7 @@ const LoginForm = () => {
     const [password, setPassword] = useState('')
 
   return (
-    <div className="wrapper">
+    <div className='wrapper'>
         <div className="form-container">
             <h1 className='form-title'>Login</h1>
             <form id='form-input'>
@@ -31,8 +31,8 @@ const LoginForm = () => {
                 <button id='submit-btn' type="submit" disabled={!password || !email}>➜
                 </button>
             </form>
-            <a className='link' href="create-account">Criar Conta</a>
-            <a className='link' href="password-recovery">Esqueceu a Senha?</a>
+            <a className='link' href="cadastro">Criar Conta</a>
+            <a className='link' href="recuperar-conta">Esqueceu a Senha?</a>
         </div>
     </div>
   )

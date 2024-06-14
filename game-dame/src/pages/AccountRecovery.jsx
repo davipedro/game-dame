@@ -22,7 +22,7 @@ const AccountRecovery = () => {
                 <button id='submit-btn' type="submit" disabled={!email}>➜
                 </button>
             </form>
-            <a className='link' href="create-account">Criar Conta</a>
+            <a className='link' href="cadastro">Criar Conta</a>
             <a className='link' href="login">Fazer Login</a>
         </div>
     </div>
