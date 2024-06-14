@@ -1,7 +1,7 @@
 import { useRef } from 'react'
 
-import '../components/Navbar'
-import Navbar from '../components/Navbar'
+import '../components/navbar/Navbar'
+import Navbar from '../components/navbar/Navbar'
 
 import './AdminPanel.css'
 
@@ -48,15 +48,15 @@ const AdminPanel = () => {
                 <button type='submit' className='submit-btn'>Cadastrar</button>
             </section>
             <section className='panel-section middle-section'>
-                <h2>Cadastrar Jogo</h2>
+                <h2>Remover Jogo</h2>
                 <input 
                     type="text" 
                     placeholder='Título do jogo ou ID'
                 />
-                <button type='submit' className='submit-btn'>Remover</button>
+                <button type='submit' className='submit-btn' id='dark-submit-btn'>Remover</button>
             </section>
             <section className='panel-section edge-section'>
-                <h2>Cadastrar Jogo</h2>
+                <h2>Editar Jogo</h2>
                 <input 
                     type="text" 
                     placeholder='Título do Jogo'
