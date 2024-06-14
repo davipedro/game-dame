@@ -1,0 +1,50 @@
+.material-symbols-outlined{
+    color: #4B626C;
+}
+
+.nav-bar-menu-button {
+    background-color: transparent;
+    width: 50px;
+    height: 50px;
+    border: none;
+    cursor: pointer;
+}
+
+
+
+.nav-bar-menu-button span {
+    font-size: 50px;
+}
+
+.nav-bar-menu-button:hover {
+    background-color: #f0f0f0;
+}
+
+#modal-menu {
+    list-style: none;
+    position: absolute;
+    width: 100%;
+    padding: 20px;
+    top: 100px;
+    right: 0px;
+    background-color: #f9f9f9;
+    box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.411);
+
+}
+
+#modal-menu li {
+    padding: 10px;
+    text-align:center;
+}
+
+#modal-menu li:hover {
+    background-color: #f0f0f0;
+    cursor: pointer;
+}
+
+#modal-menu li a {
+    text-decoration: none;
+    color: #4B626C;
+    font-size: 25px;
+    font-weight: 500;
+}

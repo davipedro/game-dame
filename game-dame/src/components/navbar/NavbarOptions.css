@@ -1,0 +1,18 @@
+.nav-options {
+    list-style: none;
+    display: flex;
+    align-items: center;
+}
+
+.nav-options a {
+    font-weight: 300;
+    color: #4B626C;
+    font-size: 32px;
+    margin: 0 10px;
+    padding: 0 20px 0 15px;
+    text-decoration: none;
+}
+
+#item-with-border {
+    border-right: 1px solid #4B626C;
+}
